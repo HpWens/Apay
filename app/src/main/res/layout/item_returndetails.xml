@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:aflf="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/item_returndetails_view"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_returndetails_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y78"
+        android:background="@color/colorfb8e45"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x10"
+        android:singleLine="true"
+        android:text="2016-03-03"
+        android:textColor="@color/color4e4e4e"
+        android:textSize="@dimen/ytext15"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y88"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/return_details_sell"
+            android:textColor="@color/color4e4e4e"
+            android:textSize="@dimen/ytext13"/>
+
+        <TextView
+            android:id="@+id/item_returndetails_sell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="50000，00元"
+            android:textColor="@color/color6e6e6e"
+            android:textSize="@dimen/ytext13"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y88"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/return_details_operate"
+            android:textColor="@color/color4e4e4e"
+            android:textSize="@dimen/ytext13"/>
+
+        <TextView
+            android:id="@+id/item_returndetails_operate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="50000，00元"
+            android:textColor="@color/color6e6e6e"
+            android:textSize="@dimen/ytext13"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y88"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/return_details_manage"
+            android:textColor="@color/color4e4e4e"
+            android:textSize="@dimen/ytext13"/>
+
+        <TextView
+            android:id="@+id/item_returndetails_manage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="50000，00元"
+            android:textColor="@color/color6e6e6e"
+            android:textSize="@dimen/ytext13"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y88"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/return_details_return"
+            android:textColor="@color/color4e4e4e"
+            android:textSize="@dimen/ytext13"/>
+
+        <TextView
+            android:id="@+id/item_returndetails_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="50000，00元"
+            android:textColor="@color/color6e6e6e"
+            android:textSize="@dimen/ytext13"/>
+    </LinearLayout>
+
+</LinearLayout>
+

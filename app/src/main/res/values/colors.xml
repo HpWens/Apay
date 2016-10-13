@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--标题栏标题的颜色-->
+    <color name="titleColor">#Faf4e6</color>
+    <!--标题栏的颜色-->
+    <color name="titlebackgourndColor">#6C4B4A</color>
+    <!--底部点击标题栏的颜色-->
+    <color name="bottontitlebackgourndColorPre">#A22a01</color>
+    <!--itemborder的颜色-->
+    <color name="itemBorderColor">#d4d4d4</color>
+    <!--menu背景的颜色-->
+    <color name="menubackgrounbColor">#303030</color>
+    <!--menu item 未点击背景的颜色-->
+    <color name="menuitembackgrounbColor">#353535</color>
+    <!--menu item 点击背景的颜色-->
+    <color name="menuitembackgrounbColorPre">#A22a01</color>
+    <!--button黄色-->
+    <color name="orangeColor">#FFA200</color>
+    <!--乳白色背景-->
+    <color name="colorF7F7F7">#f7f7f7</color>
+    <!--白色背景-->
+    <color name="colorfaf4e6">#faf4e6</color>
+    <!--fef9a3-->
+    <color name="colorfef9a3">#fef9a3</color>
+    <!--4e4e4e-->
+    <color name="color4e4e4e">#4e4e4e</color>
+    <!--617b8b-->
+    <color name="color617b8b">#617b8b</color>
+    <!--橘黄色色值-->
+    <color name="colorfb8e45">#fb8e45</color>
+    <!--6e6e6e-->
+    <color name="color6e6e6e">#6e6e6e</color>
+    <!--8C9596-->
+    <color name="color8C9596">#8C9596</color>
+    <!--945962-->
+    <color name="color945962">#945962</color>
+    <!--bfbfbf-->
+    <color name="colorbfbfbf">#bfbfbf</color>
+
+</resources>

@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.lancheng.jneng.view.YLSlidingLayout
+        android:id="@+id/slidepanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <include
+        android:id="@+id/id_left"
+        layout="@layout/menu_left" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/layout_title" />
+
+            <FrameLayout
+                android:id="@+id/tab_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#fff">
+
+            </FrameLayout>
+
+            <include layout="@layout/layout_bottom" />
+        </LinearLayout>
+
+    </com.lancheng.jneng.view.YLSlidingLayout>
+
+</LinearLayout>

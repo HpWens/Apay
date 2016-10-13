@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorF7F7F7"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y88"
+        android:background="@color/titlebackgourndColor"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mz_pay_return"
+            style="@style/button_return_style"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/mz_pay_title"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/ytext18"/>
+    </RelativeLayout>
+    <!-- 标题栏以下的控件 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y80"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x20">
+
+                <ImageView
+                    android:id="@+id/mz_pay_iv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/icon_home_arrow_graw"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:text="充值方式"
+                    android:textColor="@color/color4e4e4e"
+                    android:textSize="@dimen/ytext16"/>
+
+                <TextView
+                    android:id="@+id/pay_payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x20"
+                    android:layout_toLeftOf="@+id/mz_pay_iv1"
+                    android:text="支付宝"
+                    android:textColor="@color/color6e6e6e"
+                    android:textSize="@dimen/ytext14"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/itemBorderColor"/>
+            <!--支付bao-->
+            <LinearLayout
+                android:id="@+id/pay_alipay_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginRight="@dimen/x30"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/x30"
+                    android:background="@mipmap/icon_alipay"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="支付宝"
+                        android:textColor="@color/color4e4e4e"
+                        android:textSize="@dimen/ytext14"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="推荐有支付宝账号的用户使用"
+                        android:textColor="@color/color8C9596"
+                        android:textSize="@dimen/ytext10"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/mz_pay_alipay_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/icon_register_check_pre"/>
+            </LinearLayout>
+
+            <!--微信-->
+            <LinearLayout
+                android:id="@+id/pay_wechat_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginRight="@dimen/x30"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/x30"
+                    android:background="@mipmap/icon_appwx_logo"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="微信"
+                        android:textColor="@color/color4e4e4e"
+                        android:textSize="@dimen/ytext14"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="推荐安装微信5.0以上的版本使用"
+                        android:textColor="@color/color8C9596"
+                        android:textSize="@dimen/ytext10"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/mz_pay_wechat_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/icon_register_check_nor"/>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y88"
+                android:layout_marginLeft="@dimen/x120"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_marginTop="@dimen/y40"
+                android:background="@drawable/border_for_gray_shape">
+
+                <EditText
+                    android:id="@+id/mz_pay_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/extract_et_layout"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="转入金额，大于100元"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="@dimen/x40"
+                    android:singleLine="true"
+                    android:textColor="@color/color4e4e4e"
+                    android:textColorHint="@color/itemBorderColor"
+                    android:textSize="@dimen/ytext13"/>
+
+                <LinearLayout
+                    android:id="@+id/mz_pay_et_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="#b4b7b8"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="@dimen/x20"
+                        android:paddingRight="@dimen/x20"
+                        android:text="元"
+                        android:textColor="@color/color8C9596"
+                        android:textSize="@dimen/ytext18"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/pay_alipay_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_marginTop="@dimen/y60"
+                android:background="@drawable/border_ffa200_shape"
+                android:gravity="center"
+                android:stateListAnimator="@null"
+                android:text="立即转入"
+                android:textColor="@color/titleColor"
+                android:textSize="@dimen/ytext16"
+                />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/pic_login_background"/>
+    </LinearLayout>
+</LinearLayout>

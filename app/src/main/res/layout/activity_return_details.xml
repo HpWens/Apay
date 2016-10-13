@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorF7F7F7"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y88"
+        android:background="@color/titlebackgourndColor"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/return_details_return"
+            style="@style/button_return_style"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/returnlist_details_title"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/ytext18" />
+    </RelativeLayout>
+    <!-- 标题栏以下的控件 -->
+    <!-- 添加一个查询主控机控件 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorfef9a3"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/x30"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20"
+        android:paddingTop="@dimen/x30">
+
+        <TextView
+            android:id="@+id/return_details_start_year"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y66"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_weight="2.2"
+            android:background="@drawable/full_border_for_gray_shape_rudius5"
+            android:paddingLeft="@dimen/x20"
+            android:singleLine="true"
+            android:textColor="@color/colorbfbfbf"
+            android:textSize="@dimen/ytext14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/x20"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/return_details_end_year"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y66"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_weight="2.2"
+            android:background="@drawable/full_border_for_gray_shape_rudius5"
+            android:paddingLeft="@dimen/x20"
+            android:singleLine="true"
+            android:textColor="@color/colorbfbfbf"
+            android:textSize="@dimen/ytext14" />
+
+
+        <TextView
+            android:id="@+id/return_details_end_query"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y66"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_weight="0.7"
+            android:background="@drawable/border_f97218_shape"
+            android:gravity="center"
+            android:text="查询"
+            android:textSize="@dimen/ytext15"
+            android:textColor="@color/colorF7F7F7" />
+
+    </LinearLayout>
+    <!-- 标题栏以下的控件 -->
+    <com.lancheng.jneng.view.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+        android:id="@+id/returndetails_pullLoadMoreRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorF7F7F7" />
+
+</LinearLayout>

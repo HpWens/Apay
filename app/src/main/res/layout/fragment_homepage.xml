@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                              xmlns:app="http://schemas.android.com/apk/res-auto"
+                                              xmlns:tools="http://schemas.android.com/tools"
+                                              android:id="@+id/homepage_swip"
+                                              android:layout_width="match_parent"
+                                              android:layout_height="match_parent"
+                                              android:clickable="true"
+    >
+
+    <LinearLayout
+        android:id="@+id/homepage_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorF7F7F7"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.lancheng.jneng.view.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y410"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:background="@drawable/homepage_bg_shape"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/icon_home_ring"/>
+
+            <com.lancheng.jneng.view.ADTextView
+                android:id="@+id/homepage_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                app:ad_text_content_size="@dimen/ytext13"
+                app:ad_text_front_size="@dimen/ytext13"/>
+            <!--
+                        <TextView
+                            android:id="@+id/homepage_message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:padding="@dimen/x10"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/color4e4e4e"
+                            android:textSize="@dimen/ytext13" />-->
+        </LinearLayout>
+
+        <include layout="@layout/fragment_homepage_item"/>
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?><!--社交平台的list的item-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/item_news_id_view"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <Button
+        android:id="@+id/item_new_typeid_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:textColor="@color/itemBorderColor"
+        android:textSize="@dimen/ytext15"/>
+</LinearLayout>
+
+
+

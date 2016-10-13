@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:padding="10dp"
+            android:text="股票转出"
+            android:textColor="#fff"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/from_stock_money"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/x20"
+            android:background="@null"
+            android:hint="请输入转出股票的金额"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/color6e6e6e"
+            android:textColorHint="@color/color8C9596"
+            android:textSize="@dimen/ytext14"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/itemBorderColor"/>
+
+        <TextView
+            android:id="@+id/from_stock_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/x30"
+            android:text="确定"
+            android:textColor="@color/color945962"/>
+    </LinearLayout>
+</RelativeLayout>

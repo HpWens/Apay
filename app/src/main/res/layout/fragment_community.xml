@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorF7F7F7"
+              android:clickable="true"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/community_tab_content"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/community_tableft_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y88"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/community_tableft_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="null"
+                android:textColor="@color/bottontitlebackgourndColorPre"
+                android:textSize="@dimen/ytext15"/>
+
+            <View
+                android:id="@+id/community_tableft_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:background="@color/bottontitlebackgourndColorPre"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/itemBorderColor"/>
+
+        <LinearLayout
+            android:id="@+id/community_tabright_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y88"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/community_tabright_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="null"
+                android:textColor="@color/itemBorderColor"
+                android:textSize="@dimen/ytext15"/>
+
+            <View
+                android:id="@+id/community_tabright_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:background="@color/itemBorderColor"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.lancheng.jneng.view.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+        android:id="@+id/community_pullLoadMoreRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorF7F7F7"/>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:aflf="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/item_moneylist_view"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <!-- 标题栏以下的控件 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/y40"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20"
+        android:paddingTop="@dimen/y40">
+
+        <TextView
+            android:id="@+id/moneylist_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/icon_border_orange"
+            android:gravity="center"
+            android:text="出"
+            android:textColor="@color/orangeColor"
+            android:textSize="@dimen/ytext24"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/x30">
+
+            <TextView
+                android:id="@+id/moneylist_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="充值"
+                android:textColor="@color/orangeColor"
+                android:textSize="@dimen/ytext15"/>
+
+            <TextView
+                android:id="@+id/moneylist_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/y20"
+                android:text="2016-06-17  15:30:06"
+                android:textColor="@color/color6e6e6e"
+                android:textSize="@dimen/ytext13"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/moneylist_mun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="￥元"
+            android:textColor="@color/color945962"
+            android:textSize="@dimen/ytext13"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/itemBorderColor"/>
+</LinearLayout>
+

@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.lancheng.jneng"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    signingConfigs {
+        release {
+            storeFile file('D:\\Android_Study_Demos\\JNeng\\keystore')
+            storePassword "366ec.com"
+            keyAlias "chat"
+            keyPassword "366ec.com"
+        }
+    }
+    buildTypes {
+        release {
+            //是否开启混淆
+            minifyEnabled false
+            //是否zip优化
+            zipAlignEnabled true
+            //删除一些无用文件
+            shrinkResources true
+            //混淆所有的配置文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //签名所有的配置文件
+            signingConfig signingConfigs.release
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    // compile files('libs/gson-2.2.4.jar')
+    // compile files('libs/MobCommons-2016.0707.1708.jar')
+    //compile files('libs/universal-image-loader-1.8.6-with-sources.jar')
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    // compile files('libs/httpclient-4.4.jar')
+}

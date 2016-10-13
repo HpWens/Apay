@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width= "@dimen/x600"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:padding="10dp"
+        android:text="快速选择"
+        android:textColor="#fff"
+        android:textSize="@dimen/ytext16" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/select_returndetails_onemonth"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y60"
+            android:layout_margin="@dimen/x20"
+            android:background="@drawable/border_for_gray_shape"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"
+            android:text="@string/return_details_pop_one"
+            android:textColor="@color/color945962"
+            android:textSize="@dimen/ytext10" />
+
+        <TextView
+            android:id="@+id/select_returndetails_twomonth"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y60"
+            android:layout_margin="@dimen/x20"
+            android:background="@drawable/border_for_gray_shape"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"
+            android:text="@string/return_details_pop_two"
+            android:textColor="@color/color945962"
+            android:textSize="@dimen/ytext10" />
+
+        <TextView
+            android:id="@+id/select_returndetails_threemonth"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y60"
+            android:layout_margin="@dimen/x20"
+            android:background="@drawable/border_for_gray_shape"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"
+            android:text="@string/return_details_pop_three"
+            android:textColor="@color/color945962"
+            android:textSize="@dimen/ytext10" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/itemBorderColor" />
+
+    <DatePicker
+        android:id="@+id/layout_select_returndetails_datepicker"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:calendarViewShown="false" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/itemBorderColor" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/layout_select_returndetails_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/x20"
+            android:text="确定"
+            android:textColor="@color/color945962" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/itemBorderColor" />
+
+        <TextView
+            android:id="@+id/layout_select_returndetails_cancle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/x20"
+            android:text="取消"
+            android:textColor="@color/color945962" />
+    </LinearLayout>
+
+</LinearLayout>
+

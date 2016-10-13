@@ -1,0 +1,161 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">巨能合伙人</string>
+
+    <!--对话框退出的标题和提示文字-->
+    <string name="dialog_title">退出么</string>
+
+    <!--首页的标题栏的名字-->
+    <string name="title_one">巨能合伙人管理系统</string>
+    <!--我的账户的标题栏的名字-->
+    <string name="title_myzoe">我的账户</string>
+    <!--平台社区的标题栏的名字-->
+    <string name="title_comunity">新闻动态</string>
+    <!--更多的标题栏的名字-->
+    <string name="title_more">更多</string>
+
+    <!--首页的四个按钮的名字-->
+    <string name="botton_one">首页</string>
+    <string name="botton_two">我的账户</string>
+    <string name="botton_three">平台社区</string>
+    <string name="botton_four">更多</string>
+
+    <!--meun的5个按钮的名字-->
+    <string name="menu_textTitle1">投资列表</string>
+    <string name="menu_textTitle2">回报列表</string>
+    <string name="menu_textTitle3">交易详情</string>
+    <string name="menu_textTitle4">资金详情</string>
+    <string name="menu_textTitle5">最新动态</string>
+    <string name="menu_textTitle6">平台借款</string>
+    <!--返回-->
+    <string name="for_return">返回</string>
+
+    <!--注册页面的文字-->
+    <string name="register_title">免费注册</string>
+    <string name="register_name">用户昵称</string>
+    <string name="register_pwd">密码</string>
+    <string name="register_pwdagain">确认密码</string>
+    <string name="register_tel">账号（11位手机号码）</string>
+    <string name="register_verification">验证码</string>
+    <string name="register_rule1">我已阅读并同意</string>
+    <string name="register_rule2">[使用条款]</string>
+    <string name="register_rule3">[隐私条款]</string>
+    <string name="pro_investment">《巨能合伙人投资服务协议》</string>
+    <string name="register_sharecode">好友邀请码</string>
+    <string name="register_ok">确认</string>
+    <!--投资列表的文字-->
+    <string name="investmentlist_title">投资列表</string>
+    <!--投资列表详情的标题-->
+    <string name="investmentdetils_title">投资列表详情</string>
+    <!--回报详情-->
+    <string name="returnlist_details_title">回报详情</string>
+
+    <!--登陆的标题-->
+    <string name="login_title">登陆</string>
+    <!--忘记密码的标题-->
+    <string name="findpwd_title">忘记密码</string>
+    <string name="login_name">巨能合伙人管理系统</string>
+    <!--体现页面的标题-->
+    <string name="extract_title">提现</string>
+    <!--充值页面的标题-->
+    <string name="mz_pay_title">充值</string>
+    <string name="mz_payresult_title">充值成功</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--分享邀请码的名字-->
+    <string name="share_code_title">邀请好友</string>
+    <string name="hint_intent">网络连接不可用，请检测你的网络设置</string>
+    <string name="hint_errow">访问出现错误,请稍后重试</string>
+    <string name="getverification_code">获取验证码</string>
+    <string name="getverification_code_again">再次获取</string>
+    <string name="load_more_text">正在为您努力加载中……</string>
+    <string name="load_more_null">已加载完所有数据</string>
+
+    <!--用户信息-->
+    <string name="title_edit">编辑</string>
+    <string name="account_title">个人信息</string>
+    <string name="update_account_icon">头像</string>
+    <string name="update_account_name">昵称</string>
+    <string name="account_money">用户余额</string>
+    <string name="account_tel">绑定手机</string>
+    <string name="update_account_sex">性别</string>
+    <string name="update_account_qq">QQ</string>
+    <string name="update_account_mail">邮箱</string>
+    <string name="update_account_signature">个人签名</string>
+    <!--关于我们-->
+    <string name="more_about_address">成都市宜山路1009号创新大厦四层星巴克公司顾客关怀部门（邮编 200233）</string>
+
+    <!--修改用户信息-->
+    <string name="edit_account_title">编辑用户信息</string>
+    <string name="edit_account_nam">男</string>
+    <string name="edit_account_woman">女</string>
+    <string name="edit_account_desc">您并没有修改任何内容哦！</string>
+
+    <!--修改密码-->
+    <string name="update_password_title">修改密码</string>
+    <string name="update_password_himt_old">请输入原始密码</string>
+    <string name="update_password_himt_pwd">请输入密码</string>
+
+
+    <!--注册登录-->
+    <string name="himt_pwd_null">请输入密码，请勿使用空格！</string>
+    <string name="himt_verification_null">验证码为空哦！</string>
+    <string name="himt_pwd_inconformity">密码不一致哦！</string>
+    <string name="himt_tel">您好，请输入11位手机号码！</string>
+    <string name="himt_tel_errow_format">您的手机号码格式不正确，请重新输入！</string>
+    <string name="himt_name">您好，请输入登录名！</string>
+    <string name="himt_prol">您好，协议为必选项哦！</string>
+
+    <!--检查是否登陆-->
+    <string name="query_userid">您好，请登录！</string>
+    <string name="query_out_login">登陆已过期或未进行登陆，建议您及时登陆！</string>
+    <string name="himt_login"> \u0020\u0020\u0020\u0020您好，请您点击进行登陆。登陆成功\n后同步会员中心信息哦</string>
+    <!--回报详情-->
+    <string name="return_details_sell">销售金额：</string>
+    <string name="return_details_operate">经营成本：</string>
+    <string name="return_details_manage">管理费用：</string>
+    <string name="return_details_return">最终利润：</string>
+    <string name="return_details_pop_one">最近一个月</string>
+    <string name="return_details_pop_two">最近两个月</string>
+    <string name="return_details_pop_three">最近三个月</string>
+
+    <!--提现-->
+    <string name="himt_extract_name">您好，请输入银行卡姓名！</string>
+    <string name="himt_extract_card">您好，请输入银行卡卡号！</string>
+    <string name="himt_extract_noeny">您好，请输入金额！</string>
+    <string name="himt_extract_money_format">您好，提现金额需大于0.001哦！</string>
+    <string name="himt_money_format_errow">您好，您的货币金额格式输入不正确！</string>
+    <string name="himt_extract_money_limt_errow">您好，还没有这么多余额哦！</string>
+    <string name="extract_name">持卡人姓名</string>
+    <string name="extract_card">用户银行卡卡号！</string>
+    <string name="himt_bank_card_type_errow">您好，您输入的银行卡格式不正确请重新输入！</string>
+    <!--支付-->
+    <string name="pay_for_title">支付详情</string>
+    <string name="pay_state_ok">"支付成功"</string>
+    <string name="pay_state_failed">"支付失败"</string>
+    <string name="pay_state_indeterminate">"支付待确定"</string>
+    <string name="pay_state_cancel">"支付取消"</string>
+
+    <!--关于我们-->
+    <string name="about_us_title">关于我们</string>
+    <string name="about_us_prclo">用户协议</string>
+    <string name="about_us_contact">联系客服</string>
+    <!--登陆对话框提示-->
+    <string name="dialog_login_out_desc">确定需要退出登录吗？</string>
+    <string name="dialog_login_desc">还没有登陆哦，立即登陆吗？</string>
+    <string name="dialog_loginout">亲，您还没有进行登陆哦！</string>
+    <string name="dialog_login_ok">确定</string>
+    <string name="dialog_login_cancel">取消</string>
+    <!--访问网络的提示信息-->
+    <string name="himt_register_name">请输入4-6位字符昵称，请勿使用空格！</string>
+    <string name="himt_null_string">您好，获取到的数据为空哦！</string>
+
+    <!--支付-->
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="app_tip">提示</string>
+    <!--广告-->
+    <string name="banner_title">广告详情</string>
+    <!--意见反馈-->
+    <string name="text_feedback">意见反馈</string>
+    <string name="text_feedback_desc">留下您的宝贵意见吧</string>
+    <string name="text_feedback_tel">您的联系电话</string>
+</resources>

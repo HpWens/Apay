@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:aflf="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorF7F7F7"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y88"
+        android:background="@color/titlebackgourndColor"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/investmentdetails_return"
+            style="@style/button_return_style"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/investmentdetils_title"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/ytext18"/>
+
+    </RelativeLayout>
+    <!-- 标题栏以下的控件 -->
+    <LinearLayout
+        android:id="@+id/inverstmentdetails_errow_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/icon_sorry"/>
+
+        <TextView
+            android:id="@+id/inverstmentdetails_errow_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:singleLine="true"
+            android:text="访问出现错误啦~"
+            android:textColor="#666666"
+            android:textSize="@dimen/ytext14"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/inverstmentdetails_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <include layout="@layout/item_inverstmentlist"/>
+        <!--以下为项目描述区域-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y50"
+            android:padding="@dimen/x20"
+            android:text="项目描述"
+            android:textColor="@color/orangeColor"
+            android:textSize="@dimen/ytext22"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/itemBorderColor"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_remark"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:lineSpacingExtra="@dimen/y6"
+                android:padding="@dimen/x20"
+                android:text="宽窄巷子奶茶店\n宽窄巷子锦里奶茶店"
+                android:textColor="@color/color6e6e6e"
+                android:textSize="@dimen/ytext13"/>
+
+            <Button
+                android:id="@+id/investmentdetails_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y250"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30"
+                android:stateListAnimator="@null"
+                android:background="@drawable/border_ffa200_shape"
+                android:gravity="center"
+                android:clickable="false"
+                android:text="我要投标"
+                android:textColor="@color/titleColor"
+                android:textSize="@dimen/ytext16"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

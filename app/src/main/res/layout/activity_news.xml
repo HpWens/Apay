@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorF7F7F7"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y88"
+        android:background="@color/titlebackgourndColor"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/news_return"
+            style="@style/button_return_style"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/news_title"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/menu_textTitle5"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/ytext18"/>
+    </RelativeLayout>
+
+    <!-- 标题栏以下的控件 -->
+    <com.lancheng.jneng.view.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+        android:id="@+id/news_pullLoadMoreRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorF7F7F7"/>
+
+    <LinearLayout
+        android:id="@+id/news_errow_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/icon_sorry"/>
+
+        <TextView
+            android:id="@+id/news_errow_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:singleLine="true"
+            android:text="访问出现错误啦~"
+            android:textColor="#666666"
+            android:textSize="@dimen/ytext14"/>
+    </LinearLayout>
+</LinearLayout>

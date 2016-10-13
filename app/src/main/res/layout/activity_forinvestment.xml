@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:aflf="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorF7F7F7"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y88"
+        android:background="@color/titlebackgourndColor"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/forinvestment_return"
+            style="@style/button_return_style"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/investmentdetils_title"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/ytext18"/>
+
+    </RelativeLayout>
+    <!-- 标题栏以下的控件 -->
+    <LinearLayout
+        android:id="@+id/forinvestment_errow_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/icon_sorry"/>
+
+        <TextView
+            android:id="@+id/forinvestment_errow_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:singleLine="true"
+            android:text="访问出现错误啦~"
+            android:textColor="#666666"
+            android:textSize="@dimen/ytext14"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/forinvestment_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical"
+        >
+
+        <include layout="@layout/item_inverstmentlist"/>
+        <!--以下为项目描述区域-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y88"
+            android:layout_margin="@dimen/x20"
+            android:background="@drawable/border_for_gray_shape">
+
+            <EditText
+                android:id="@+id/forinvestment_editmoney"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/forinvestment_money_layout"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="投标金额，大于100元"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:paddingLeft="@dimen/x40"
+                android:singleLine="true"
+                android:textColor="#666666"
+                android:textColorHint="@color/color8C9596"
+                android:textSize="@dimen/ytext14"/>
+
+            <LinearLayout
+                android:id="@+id/forinvestment_money_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="#b4b7b8"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="@dimen/x20"
+                    android:paddingRight="@dimen/x20"
+                    android:text="元"
+                    android:textColor="@color/color8C9596"
+                    android:textSize="@dimen/ytext18"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/x50"
+                android:paddingTop="@dimen/x20"
+                android:text="您当前的可用额度为："
+                android:textColor="@color/color945962"
+                android:textSize="@dimen/ytext14"/>
+
+            <TextView
+                android:id="@+id/forinvestment_limit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/x20"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/color945962"
+                android:textSize="@dimen/ytext13"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/forinvestment_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/x20"
+            android:background="@drawable/border_rectangle_b4b7b8_shape"
+            android:paddingBottom="@dimen/x8"
+            android:paddingLeft="@dimen/x30"
+            android:paddingRight="@dimen/x30"
+            android:paddingTop="@dimen/x8"
+            android:text="全投"
+            android:textColor="@color/color8C9596"
+            android:textSize="@dimen/ytext14"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginTop="@dimen/y70"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/y10"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x9"
+                android:layout_weight="1"
+                android:text="@string/pro_investment"
+                android:textColor="@color/color617b8b"
+                android:textSize="@dimen/ytext14"
+                android:id="@+id/forinvestemtn_protocol_desc"/>
+
+            <CheckBox
+                android:id="@+id/forinvestment_checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x6"
+                android:button="@drawable/chekboxd_register"
+                android:checked="false"
+                android:textColor="@color/color4e4e4e"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/forinvestment_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:background="@drawable/border_ffa200_shape"
+            android:clickable="false"
+            android:gravity="center"
+            android:stateListAnimator="@null"
+            android:text="同意协议并投标"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/ytext16"/>
+    </LinearLayout>
+</LinearLayout>

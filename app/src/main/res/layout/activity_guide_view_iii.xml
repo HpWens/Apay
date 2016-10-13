@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:background="@mipmap/pic_guide_three"/>
+
+    <Button
+        android:id="@+id/guide_start_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@drawable/border_cd3232_shape"
+        android:gravity="center"
+        android:paddingTop="@dimen/y10"
+        android:paddingBottom="@dimen/y10"
+        android:paddingRight="@dimen/x20"
+        android:paddingLeft="@dimen/x20"
+        android:text="立刻赚钱"
+        android:layout_marginBottom="@dimen/y140"
+        android:textColor="#cd3232"
+        />
+</FrameLayout>
+

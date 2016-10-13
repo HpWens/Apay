@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/item_tradelist_view"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_tradelist_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/x30"
+        >
+
+        <com.lancheng.jneng.view.RoundImageView
+            android:id="@+id/item_tradelist_icon"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/x150"
+            android:layout_margin="@dimen/x30"
+            android:scaleType="centerInside"
+            android:src="@mipmap/pic_login_background"
+            app:borderRadius="4dp"
+            app:type="round"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@id/item_tradelist_icon"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_tradelist_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingBottom="@dimen/y8"
+                    android:singleLine="true"
+                    android:text="fsgfgsfdfd"
+                    android:textColor="@color/color4e4e4e"
+                    android:textSize="@dimen/ytext15"/>
+
+                <TextView
+                    android:id="@+id/item_tradelist_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingTop="@dimen/y15"
+                    android:singleLine="true"
+                    android:text="总投资金额：6000  可用金额：600"
+                    android:textColor="@color/titlebackgourndColor"
+                    android:textSize="@dimen/ytext13"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/x20"
+                android:background="@mipmap/icon_home_arrow_graw"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/itemBorderColor"/>
+</LinearLayout>
+

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorF7F7F7"
+    android:clickable="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y88"
+        android:background="@color/titlebackgourndColor">
+
+        <Button
+            android:id="@+id/account_return"
+            style="@style/button_return_style"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/account_title"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/ytext18" />
+
+        <TextView
+            android:id="@+id/account_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/x20"
+            android:text="@string/title_edit"
+            android:textColor="@color/titleColor" />
+    </RelativeLayout>
+    <!--以下为标题栏之后的内容-->
+    <LinearLayout
+        android:id="@+id/account_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x30">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/update_account_icon"
+                android:textColor="@color/color4e4e4e"
+                android:textSize="@dimen/ytext15" />
+
+            <com.lancheng.jneng.view.CircleImageView
+                android:id="@+id/account_icon"
+                android:layout_width="@dimen/y100"
+                android:layout_height="@dimen/y100"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                app:border_color="#7fffffff"
+                app:border_width="4dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/x20"
+            android:background="@color/itemBorderColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y90"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x30">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/update_account_name"
+                android:textColor="@color/color4e4e4e"
+                android:textSize="@dimen/ytext15" />
+
+            <TextView
+                android:id="@+id/account_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="null"
+                android:textColor="@color/color4e4e4e"
+                android:textSize="@dimen/ytext15" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/x20"
+            android:background="@color/itemBorderColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y90"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x30">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/update_account_sex"
+                android:textColor="@color/color4e4e4e"
+                android:textSize="@dimen/ytext15" />
+
+            <TextView
+                android:id="@+id/account_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="null"
+                android:textColor="@color/color4e4e4e"
+                android:textSize="@dimen/ytext15" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/x20"
+            android:background="@color/itemBorderColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y90"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x30">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/update_account_mail"
+                android:textColor="@color/color4e4e4e"
+                android:textSize="@dimen/ytext15" />
+
+            <TextView
+                android:id="@+id/account_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="null"
+                android:textColor="@color/color4e4e4e"
+                android:textSize="@dimen/ytext15" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/x20"
+            android:background="@color/itemBorderColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y90"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x30">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/update_account_qq"
+                android:textColor="@color/color4e4e4e"
+                android:textSize="@dimen/ytext15" />
+
+            <TextView
+                android:id="@+id/account_qq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="null"
+                android:textColor="@color/color4e4e4e"
+                android:textSize="@dimen/ytext15" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/x20"
+            android:background="@color/itemBorderColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y90"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x30">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_tel"
+                android:textColor="@color/color4e4e4e"
+                android:textSize="@dimen/ytext15" />
+
+            <TextView
+                android:id="@+id/account_tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="null"
+                android:textColor="@color/color4e4e4e"
+                android:textSize="@dimen/ytext15" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/x20"
+            android:background="@color/itemBorderColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y90"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x30">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_money"
+                android:textColor="@color/color4e4e4e"
+                android:textSize="@dimen/ytext15" />
+
+            <TextView
+                android:id="@+id/account_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="null"
+                android:textColor="@color/color4e4e4e"
+                android:textSize="@dimen/ytext15" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/x20"
+            android:background="@color/itemBorderColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y90"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x30">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/update_account_signature"
+                android:textColor="@color/color4e4e4e"
+                android:textSize="@dimen/ytext15" />
+
+            <TextView
+                android:id="@+id/account_signature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:paddingLeft="@dimen/x10"
+                android:singleLine="true"
+                android:text="null"
+                android:textColor="@color/color4e4e4e"
+                android:textSize="@dimen/ytext15" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/x20"
+            android:background="@color/itemBorderColor" />
+    </LinearLayout>
+</LinearLayout>
